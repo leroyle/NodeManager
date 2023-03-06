@@ -97,7 +97,10 @@ Chip type
 #if defined(ESP32) || defined(MY_GATEWAY_ESP32)
 #define CHIP_ESP32
 #endif
-#if defined (MYBOARDNRF5) || defined(NRF51) || defined(NRF52)
+// LAL for Seeed Xiao BLE/Rak Wireless 
+//  #if defined (MYBOARDNRF5) || defined(NRF51) || defined(NRF52)
+#if defined (MYBOARDNRF5) || defined(NRF51) || defined(NRF52) || defined(NRF52840_XXAA)
+
 #define CHIP_NRF5
 #endif
 #if !defined(CHIP_ESP8266) && !defined(CHIP_ESP32) && !defined(CHIP_STM32) && !defined(CHIP_NRF5)
